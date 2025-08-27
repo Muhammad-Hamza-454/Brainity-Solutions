@@ -1228,7 +1228,7 @@ const _qW1xP31UVF6HL9iNrIMbzO0X8uNsS__hZiOwPCD84dg = (function(nitro) {
 
 const rootDir = "/Users/muhammadhamza/Desktop/Brainity-Solutions";
 
-const appHead = {"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"name":"description","content":"Professional portfolio showcasing innovative solutions and creative projects."}],"link":[{"rel":"icon","type":"image/x-icon","href":"/favicon.ico"}],"style":[],"script":[],"noscript":[],"title":"Brainity Solutions - Portfolio"};
+const appHead = {"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"name":"description","content":"Brainity Solutions - Leading digital transformation company specializing in mobile apps, web development, UI/UX design, enterprise software, and IT consulting services in Lahore, Pakistan."},{"name":"keywords","content":"web development, mobile app development, UI/UX design, enterprise software, IT consulting, digital transformation, Lahore, Pakistan"},{"property":"og:title","content":"Brainity Solutions - Digital Excellence"},{"property":"og:description","content":"Professional digital solutions and innovative technology services"},{"property":"og:type","content":"website"}],"link":[{"rel":"icon","type":"image/x-icon","href":"/favicon.ico"}],"style":[],"script":[],"noscript":[],"title":"Brainity Solutions - Transforming Ideas into Digital Excellence"};
 
 const appRootTag = "div";
 

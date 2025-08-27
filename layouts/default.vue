@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-white">
     <!-- Navigation -->
-    <Navbar />
+    <AppNavbar />
     
     <!-- Main Content -->
     <main>
@@ -9,10 +9,26 @@
     </main>
     
     <!-- Footer -->
-    <Footer />
+    <AppFooter />
   </div>
 </template>
 
 <script setup lang="ts">
-// Auto-import components from ~/components/ui and ~/components/sections
+// Global layout with enhanced navigation and footer
+useHead({
+  htmlAttrs: {
+    lang: 'en'
+  },
+  link: [
+    {
+      rel: 'preconnect',
+      href: 'https://fonts.googleapis.com'
+    },
+    {
+      rel: 'preconnect', 
+      href: 'https://fonts.gstatic.com',
+      crossorigin: ''
+    }
+  ]
+})
 </script>

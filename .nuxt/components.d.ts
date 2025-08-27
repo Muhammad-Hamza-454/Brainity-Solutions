@@ -12,7 +12,9 @@ type HydrationStrategies = {
 }
 type LazyComponent<T> = (T & DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }>)
 interface _GlobalComponents {
-      'SectionsAboutNew': typeof import("../components/sections/About-new.vue")['default']
+      'AppFooter': typeof import("../components/AppFooter.vue")['default']
+    'AppNavbar': typeof import("../components/AppNavbar.vue")['default']
+    'SectionsAboutNew': typeof import("../components/sections/About-new.vue")['default']
     'SectionsAbout': typeof import("../components/sections/About.vue")['default']
     'SectionsContactNew': typeof import("../components/sections/Contact-new.vue")['default']
     'SectionsContact': typeof import("../components/sections/Contact.vue")['default']
@@ -59,7 +61,9 @@ interface _GlobalComponents {
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'NuxtIsland': typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
     'NuxtRouteAnnouncer': typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']
-      'LazySectionsAboutNew': LazyComponent<typeof import("../components/sections/About-new.vue")['default']>
+      'LazyAppFooter': LazyComponent<typeof import("../components/AppFooter.vue")['default']>
+    'LazyAppNavbar': LazyComponent<typeof import("../components/AppNavbar.vue")['default']>
+    'LazySectionsAboutNew': LazyComponent<typeof import("../components/sections/About-new.vue")['default']>
     'LazySectionsAbout': LazyComponent<typeof import("../components/sections/About.vue")['default']>
     'LazySectionsContactNew': LazyComponent<typeof import("../components/sections/Contact-new.vue")['default']>
     'LazySectionsContact': LazyComponent<typeof import("../components/sections/Contact.vue")['default']>
@@ -112,6 +116,8 @@ declare module 'vue' {
   export interface GlobalComponents extends _GlobalComponents { }
 }
 
+export const AppFooter: typeof import("../components/AppFooter.vue")['default']
+export const AppNavbar: typeof import("../components/AppNavbar.vue")['default']
 export const SectionsAboutNew: typeof import("../components/sections/About-new.vue")['default']
 export const SectionsAbout: typeof import("../components/sections/About.vue")['default']
 export const SectionsContactNew: typeof import("../components/sections/Contact-new.vue")['default']
@@ -159,6 +165,8 @@ export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
 export const NuxtRouteAnnouncer: typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']
+export const LazyAppFooter: LazyComponent<typeof import("../components/AppFooter.vue")['default']>
+export const LazyAppNavbar: LazyComponent<typeof import("../components/AppNavbar.vue")['default']>
 export const LazySectionsAboutNew: LazyComponent<typeof import("../components/sections/About-new.vue")['default']>
 export const LazySectionsAbout: LazyComponent<typeof import("../components/sections/About.vue")['default']>
 export const LazySectionsContactNew: LazyComponent<typeof import("../components/sections/Contact-new.vue")['default']>
