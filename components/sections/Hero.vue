@@ -33,7 +33,7 @@
             variant="primary" 
             size="lg"
             icon="lucide:briefcase"
-            @click="scrollToServices"
+            @click="goToServices"
           >
             Our Services
           </Button>
@@ -42,7 +42,7 @@
             variant="outline" 
             size="lg"
             icon="lucide:phone"
-            @click="scrollToContact"
+            @click="goToContact"
           >
             Contact Us
           </Button>
@@ -50,25 +50,38 @@
       </div>
 
       <!-- Scroll Indicator -->
-      <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <Icon name="lucide:chevron-down" class="w-6 h-6 text-gray-400" />
+      <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer" @click="scrollToNextSection">
+        <Icon name="lucide:chevron-down" class="w-6 h-6 text-gray-400 hover:text-primary-600 transition-colors" />
       </div>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-const scrollToServices = () => {
-  const servicesSection = document.getElementById('services')
-  if (servicesSection) {
-    servicesSection.scrollIntoView({ behavior: 'smooth' })
-  }
+const router = useRouter()
+
+// Navigate to Services page
+const goToServices = () => {
+  router.push('/services')
 }
 
-const scrollToContact = () => {
-  const contactSection = document.getElementById('contact')
-  if (contactSection) {
-    contactSection.scrollIntoView({ behavior: 'smooth' })
+// Navigate to Contact page  
+const goToContact = () => {
+  router.push('/contact')
+}
+
+// Scroll to the next section on the same page
+const scrollToNextSection = () => {
+  // Scroll to the about preview section on the home page
+  const aboutSection = document.querySelector('.py-20.bg-white')
+  if (aboutSection) {
+    aboutSection.scrollIntoView({ behavior: 'smooth' })
+  } else {
+    // If no about section found, scroll down by viewport height
+    window.scrollBy({
+      top: window.innerHeight,
+      behavior: 'smooth'
+    })
   }
 }
 </script>
