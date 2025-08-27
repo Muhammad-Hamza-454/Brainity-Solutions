@@ -1,7 +1,7 @@
 <template>
   <div class="pt-16">
     <!-- Page Header -->
-    <section class="section-padding bg-gray-50">
+    <section class="section-padding bg-gradient-to-br from-primary-50 via-white to-secondary-50">
       <div class="container-max text-center">
         <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
           Get in Touch
@@ -9,7 +9,7 @@
         <p class="text-lg text-gray-600 max-w-2xl mx-auto">
           I'm always excited to discuss new projects, opportunities, or just chat about technology and innovation.
         </p>
-        <div class="w-20 h-1 bg-primary-600 rounded-full mx-auto mt-6"></div>
+        <div class="w-20 h-1 bg-gradient-mint-purple rounded-full mx-auto mt-6"></div>
       </div>
     </section>
 

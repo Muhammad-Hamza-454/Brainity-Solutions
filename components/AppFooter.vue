@@ -5,25 +5,25 @@
         <!-- Company Info -->
         <div class="space-y-4 animate-fadeInUp animate-delay-100">
           <NuxtLink to="/" class="flex items-center space-x-2">
-            <div class="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+            <div class="w-10 h-10 bg-gradient-mint-purple rounded-lg flex items-center justify-center shadow-lg">
               <Icon name="lucide:brain-circuit" size="24" class="text-white" />
             </div>
-            <span class="text-xl font-bold">Brainity Solutions</span>
+            <span class="text-xl font-bold" style="background: linear-gradient(135deg, #14b8a6, #a855f7); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">Brainity Solutions</span>
           </NuxtLink>
           <p class="text-gray-400 leading-relaxed">
             Transforming ideas into digital excellence. Your trusted partner for innovative software solutions and digital transformation.
           </p>
           <div class="flex space-x-4">
-            <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors duration-300">
+            <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gradient-mint-purple transition-all duration-300 hover:scale-105 transform">
               <Icon name="lucide:facebook" size="20" />
             </a>
-            <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors duration-300">
+            <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gradient-mint-purple transition-all duration-300 hover:scale-105 transform">
               <Icon name="lucide:twitter" size="20" />
             </a>
-            <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors duration-300">
+            <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gradient-mint-purple transition-all duration-300 hover:scale-105 transform">
               <Icon name="lucide:linkedin" size="20" />
             </a>
-            <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors duration-300">
+            <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gradient-mint-purple transition-all duration-300 hover:scale-105 transform">
               <Icon name="lucide:instagram" size="20" />
             </a>
           </div>

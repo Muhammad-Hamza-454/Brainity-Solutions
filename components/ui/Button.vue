@@ -36,13 +36,13 @@ const emit = defineEmits<{
 }>()
 
 const getButtonClasses = () => {
-  const base = 'inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2'
+  const base = 'inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 hover:scale-105 transform'
   
   const variants = {
-    primary: 'bg-primary-600 hover:bg-primary-700 text-white focus:ring-primary-500',
-    secondary: 'bg-gray-100 hover:bg-gray-200 text-gray-900 focus:ring-gray-500',
-    outline: 'border border-gray-300 bg-transparent hover:bg-gray-50 text-gray-700 focus:ring-gray-500',
-    ghost: 'bg-transparent hover:bg-gray-100 text-gray-700 focus:ring-gray-500',
+    primary: 'bg-gradient-mint-purple hover:shadow-lg text-white focus:ring-primary-500',
+    secondary: 'bg-gradient-purple hover:shadow-lg text-white focus:ring-secondary-500',
+    outline: 'border-2 border-primary-500 bg-transparent hover:bg-gradient-mint-purple hover:text-white text-primary-600 focus:ring-primary-500',
+    ghost: 'bg-transparent hover:bg-primary-50 text-primary-700 focus:ring-primary-500',
     danger: 'bg-red-600 hover:bg-red-700 text-white focus:ring-red-500'
   }
   

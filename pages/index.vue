@@ -39,7 +39,7 @@
             </div>
           </div>
           <div class="mt-12">
-            <NuxtLink to="/about" class="inline-flex items-center px-6 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors">
+            <NuxtLink to="/about" class="inline-flex items-center px-6 py-3 bg-gradient-mint-purple text-white font-semibold rounded-lg hover:shadow-lg hover:scale-105 transform transition-all duration-200">
               Learn More About Us
               <Icon name="lucide:arrow-right" class="w-4 h-4 ml-2" />
             </NuxtLink>
@@ -111,7 +111,7 @@
         </div>
 
         <div class="text-center mt-12">
-          <NuxtLink to="/services" class="inline-flex items-center px-6 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors">
+          <NuxtLink to="/services" class="inline-flex items-center px-6 py-3 bg-gradient-mint-purple text-white font-semibold rounded-lg hover:shadow-lg hover:scale-105 transform transition-all duration-200">
             View All Services
             <Icon name="lucide:arrow-right" class="w-4 h-4 ml-2" />
           </NuxtLink>
@@ -120,21 +120,21 @@
     </section>
 
     <!-- Contact CTA Section -->
-    <section class="py-20 bg-primary-600">
+    <section class="py-20 bg-gradient-mint-purple">
       <div class="container mx-auto px-4">
         <div class="max-w-4xl mx-auto text-center">
           <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
             Ready to Start Your Project?
           </h2>
-          <p class="text-xl text-primary-100 mb-8">
+          <p class="text-xl text-white/90 mb-8">
             Let's discuss how we can help bring your ideas to life with our expertise and innovative solutions.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <NuxtLink to="/contact" class="inline-flex items-center px-8 py-3 bg-white text-primary-600 font-semibold rounded-lg hover:bg-gray-100 transition-colors">
+            <NuxtLink to="/contact" class="inline-flex items-center px-8 py-3 bg-white text-primary-600 font-semibold rounded-lg hover:bg-gray-100 hover:scale-105 transform transition-all duration-200 shadow-lg">
               Get in Touch
               <Icon name="lucide:mail" class="w-4 h-4 ml-2" />
             </NuxtLink>
-            <a href="tel:+1234567890" class="inline-flex items-center px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-primary-600 transition-colors">
+            <a href="tel:+1234567890" class="inline-flex items-center px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-primary-600 hover:scale-105 transform transition-all duration-200">
               Call Us Now
               <Icon name="lucide:phone" class="w-4 h-4 ml-2" />
             </a>

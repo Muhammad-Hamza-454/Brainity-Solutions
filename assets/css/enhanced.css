@@ -2,16 +2,16 @@
 
 /* Root Variables */
 :root {
-  --primary-50: #eff6ff;
-  --primary-100: #dbeafe;
-  --primary-200: #bfdbfe;
-  --primary-300: #93c5fd;
-  --primary-400: #60a5fa;
-  --primary-500: #3b82f6;
-  --primary-600: #2563eb;
-  --primary-700: #1d4ed8;
-  --primary-800: #1e40af;
-  --primary-900: #1e3a8a;
+  --primary-50: #f0fdfa;
+  --primary-100: #ccfbf1;
+  --primary-200: #99f6e4;
+  --primary-300: #5eead4;
+  --primary-400: #2dd4bf;
+  --primary-500: #14b8a6;
+  --primary-600: #0d9488;
+  --primary-700: #0f766e;
+  --primary-800: #115e59;
+  --primary-900: #134e4a;
   
   --secondary-50: #faf5ff;
   --secondary-100: #f3e8ff;
@@ -38,7 +38,7 @@
 
 /* Enhanced Gradients */
 .gradient-primary {
-  background: linear-gradient(135deg, var(--primary-600) 0%, var(--secondary-600) 100%);
+  background: linear-gradient(135deg, var(--primary-500) 0%, var(--secondary-600) 100%);
 }
 
 .gradient-primary-soft {
@@ -46,7 +46,7 @@
 }
 
 .gradient-overlay {
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.9) 0%, rgba(147, 51, 234, 0.9) 100%);
+  background: linear-gradient(135deg, rgba(20, 184, 166, 0.9) 0%, rgba(168, 85, 247, 0.9) 100%);
 }
 
 /* Glass Morphism */
@@ -66,11 +66,26 @@
 
 /* Enhanced Typography */
 .text-gradient {
-  background: linear-gradient(135deg, var(--primary-600), var(--secondary-600));
+  background: linear-gradient(135deg, var(--primary-500), var(--secondary-600));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-mint-purple {
+  background: linear-gradient(135deg, #14b8a6, #a855f7);
+  -webkit-background-clip: text;
   background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.gradient-text-brand {
+  background: linear-gradient(135deg, #14b8a6 0%, #a855f7 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
 }
 
 .text-shadow {
@@ -144,7 +159,7 @@
 
 /* Navigation Enhancements */
 .nav-link {
-  @apply text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-300 relative;
+  @apply text-gray-700 hover:text-primary-600 px-3 py-2 rounded-md transition-colors duration-300 relative;
 }
 
 .nav-link::after {
@@ -154,7 +169,7 @@
   height: 2px;
   bottom: 0;
   left: 50%;
-  background: linear-gradient(135deg, var(--primary-600), var(--secondary-600));
+  background: linear-gradient(135deg, var(--primary-500), var(--secondary-600));
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }

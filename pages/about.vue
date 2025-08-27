@@ -1,11 +1,11 @@
 <template>
   <div class="min-h-screen bg-gray-50">
     <!-- Page Header -->
-    <section class="bg-gradient-to-r from-blue-600 to-purple-700 text-white py-16">
+    <section class="bg-gradient-mint-purple text-white py-16">
       <div class="section-container">
         <div class="text-center animate-fadeInUp">
           <h1 class="text-4xl md:text-5xl font-bold mb-4">About Brainity Solutions</h1>
-          <p class="text-xl text-blue-100 max-w-3xl mx-auto">
+          <p class="text-xl text-white/90 max-w-3xl mx-auto">
             We are passionate innovators dedicated to transforming ideas into exceptional digital experiences
           </p>
         </div>
