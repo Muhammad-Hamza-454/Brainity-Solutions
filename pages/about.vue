@@ -164,11 +164,11 @@
     </section>
 
     <!-- Why Choose Us -->
-    <section class="section-padding bg-gradient-to-r from-blue-600 to-purple-700 text-white">
+    <section class="section-padding bg-gradient-mint-purple text-white">
       <div class="section-container">
         <div class="text-center mb-16 animate-fadeInUp">
           <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Choose Brainity Solutions?</h2>
-          <p class="text-xl text-blue-100 max-w-3xl mx-auto">
+          <p class="text-xl text-white/90 max-w-3xl mx-auto">
             We bring unique advantages to every project we undertake
           </p>
         </div>
@@ -179,7 +179,7 @@
               <Icon name="lucide:clock" size="32" class="text-white" />
             </div>
             <h3 class="text-xl font-semibold mb-2">Fast Delivery</h3>
-            <p class="text-blue-100">
+            <p class="text-white/90">
               We understand the importance of timelines and consistently deliver projects on schedule.
             </p>
           </div>
@@ -189,7 +189,7 @@
               <Icon name="lucide:dollar-sign" size="32" class="text-white" />
             </div>
             <h3 class="text-xl font-semibold mb-2">Cost-Effective</h3>
-            <p class="text-blue-100">
+            <p class="text-white/90">
               Competitive pricing without compromising on quality or functionality.
             </p>
           </div>
@@ -199,7 +199,7 @@
               <Icon name="lucide:headphones" size="32" class="text-white" />
             </div>
             <h3 class="text-xl font-semibold mb-2">24/7 Support</h3>
-            <p class="text-blue-100">
+            <p class="text-white/90">
               Dedicated support team available round the clock for your peace of mind.
             </p>
           </div>
