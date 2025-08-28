@@ -267,7 +267,7 @@ const submitForm = async () => {
 }
 
 useHead({
-  title: 'Contact - Muhammad Hamza | Brainity Solutions',
+  title: 'Contact - Brainity Solutions',
   meta: [
     {
       name: 'description',
