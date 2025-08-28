@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-gray-50">
     <!-- Page Header -->
-    <section class="bg-teal-600 text-white py-16">
+    <section class="bg-gradient-mint-purple text-white py-16 pt-24">
       <div class="container mx-auto px-4">
         <div class="text-center">
           <h1 class="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>

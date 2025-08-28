@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-gray-50">
     <!-- Page Header -->
-    <section class="bg-gradient-mint-purple text-white py-16">
+    <section class="bg-gradient-mint-purple text-white py-16 pt-24">
       <div class="section-container">
         <div class="text-center animate-fadeInUp">
           <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Services</h1>
