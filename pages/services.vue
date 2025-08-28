@@ -351,13 +351,13 @@
     </section>
 
     <!-- CTA Section -->
-    <section id="contact" class="section-padding bg-gradient-to-r from-blue-600 to-purple-700 text-white">
+    <section id="contact" class="section-padding bg-gradient-mint-purple text-white">
       <div class="section-container">
         <div class="text-center animate-fadeInUp">
           <h2 class="text-3xl md:text-4xl font-bold mb-4">
             Ready to Get Started?
           </h2>
-          <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+          <p class="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
             Let's discuss your project requirements and how we can help you achieve your digital goals.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -365,7 +365,7 @@
               <Icon name="lucide:phone" size="20" class="mr-2" />
               Call +92 312 4573059
             </UiButton>
-            <UiButton size="lg" variant="outline" @click="$router.push('/contact')">
+            <UiButton size="lg" variant="outline" class="border-white text-white hover:bg-white hover:text-gray-900" @click="$router.push('/contact')">
               <Icon name="lucide:mail" size="20" class="mr-2" />
               Send Message
             </UiButton>
