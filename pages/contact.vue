@@ -78,6 +78,18 @@
 
           <!-- Contact Form -->
           <div class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+            <!-- Success Message -->
+            <div 
+              v-if="showSuccessMessage" 
+              class="mb-6 p-4 bg-green-50 border-2 border-green-500 rounded-lg flex items-center animate-fadeInUp shadow-sm"
+            >
+              <Icon name="lucide:check-circle" size="20" class="text-green-600 mr-3 animate-pulse" />
+              <div>
+                <p class="text-green-800 font-semibold">Message Sent Successfully! ✨</p>
+                <p class="text-green-700 text-sm">Thank you for reaching out. We'll get back to you within 24 hours.</p>
+              </div>
+            </div>
+
             <h3 class="text-2xl font-bold text-gray-900 mb-6">Get in Touch for Top Solutions and Expert Advice</h3>
             <form @submit.prevent="submitForm" class="space-y-6">
               <!-- Name Fields -->
@@ -200,6 +212,8 @@
 
 <script setup lang="ts">
 const activeFaq = ref<number | null>(null)
+const isSubmitting = ref(false)
+const showSuccessMessage = ref(false)
 
 const faqs = [
   {
@@ -241,15 +255,15 @@ const form = ref({
   message: ''
 })
 
-const isSubmitting = ref(false)
-
 // Form submission
 const submitForm = async () => {
   isSubmitting.value = true
   
   try {
     await new Promise(resolve => setTimeout(resolve, 2000))
-    alert('Thank you for your message! We\'ll get back to you within 24 hours.')
+    
+    // Show success message
+    showSuccessMessage.value = true
     
     // Reset form
     form.value = {
@@ -259,8 +273,15 @@ const submitForm = async () => {
       phone: '',
       message: ''
     }
+    
+    // Hide success message after 5 seconds
+    setTimeout(() => {
+      showSuccessMessage.value = false
+    }, 5000)
+    
   } catch (error) {
-    alert('Sorry, there was an error sending your message. Please try again.')
+    // You can add error handling here if needed
+    console.error('Form submission error:', error)
   } finally {
     isSubmitting.value = false
   }
