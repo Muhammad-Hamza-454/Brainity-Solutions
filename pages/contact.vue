@@ -156,6 +156,34 @@
                 ></textarea>
               </div>
 
+              <!-- Privacy Policy and Terms Checkbox -->
+              <div>
+                <div class="flex items-start space-x-3">
+                  <input
+                    type="checkbox"
+                    id="agreeToTerms"
+                    v-model="form.agreeToTerms"
+                    class="mt-1 w-4 h-4 text-teal-600 bg-gray-100 border-gray-300 rounded focus:ring-teal-500 focus:ring-2"
+                    :class="{ 'border-red-500': showTermsError }"
+                  />
+                  <label for="agreeToTerms" class="text-sm text-gray-600 leading-5">
+                    I agree to the 
+                    <NuxtLink to="/privacy-policy" target="_blank" class="text-teal-600 hover:text-teal-800 underline font-medium">
+                      Privacy Policy
+                    </NuxtLink>
+                    and
+                    <NuxtLink to="/terms-of-service" target="_blank" class="text-teal-600 hover:text-teal-800 underline font-medium">
+                      Terms of Service
+                    </NuxtLink>
+                    *
+                  </label>
+                </div>
+                <div v-if="showTermsError" class="mt-2 text-sm text-red-600 flex items-center">
+                  <Icon name="lucide:alert-circle" size="16" class="mr-1" />
+                  Please accept the Privacy Policy and Terms of Service to continue.
+                </div>
+              </div>
+
               <!-- Submit Button -->
               <button 
                 type="submit" 
@@ -214,6 +242,7 @@
 const activeFaq = ref<number | null>(null)
 const isSubmitting = ref(false)
 const showSuccessMessage = ref(false)
+const showTermsError = ref(false)
 
 const faqs = [
   {
@@ -252,11 +281,21 @@ const form = ref({
   lastName: '',
   email: '',
   phone: '',
-  message: ''
+  message: '',
+  agreeToTerms: false
 })
 
 // Form submission
 const submitForm = async () => {
+  // Reset error state
+  showTermsError.value = false
+  
+  // Validate terms checkbox
+  if (!form.value.agreeToTerms) {
+    showTermsError.value = true
+    return
+  }
+  
   isSubmitting.value = true
   
   try {
@@ -271,7 +310,8 @@ const submitForm = async () => {
       lastName: '',
       email: '',
       phone: '',
-      message: ''
+      message: '',
+      agreeToTerms: false
     }
     
     // Hide success message after 5 seconds
@@ -286,6 +326,13 @@ const submitForm = async () => {
     isSubmitting.value = false
   }
 }
+
+// Watch for checkbox changes to hide error
+watch(() => form.value.agreeToTerms, (newValue) => {
+  if (newValue) {
+    showTermsError.value = false
+  }
+})
 
 useHead({
   title: 'Contact - Brainity Solutions',
