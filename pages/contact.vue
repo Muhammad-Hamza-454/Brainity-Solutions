@@ -37,7 +37,7 @@
                 </div>
                 <div>
                   <h3 class="font-semibold text-gray-900">Email Us</h3>
-                  <p class="text-gray-600">hello@brainitysolutions.com</p>
+                  <p class="text-gray-600">brainitysolutions@gmail.com</p>
                 </div>
               </div>
 

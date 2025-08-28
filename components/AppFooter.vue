@@ -63,7 +63,7 @@
             </div>
             <div class="flex items-center">
               <Icon name="lucide:mail" size="20" class="text-blue-400 mr-3" />
-              <a href="mailto:info@brainitysolutions.com" class="text-gray-400 hover:text-white transition-colors duration-300">info@brainitysolutions.com</a>
+              <a href="mailto:brainitysolutions@gmail.com" class="text-gray-400 hover:text-white transition-colors duration-300">brainitysolutions@gmail.com</a>
             </div>
             <div class="flex items-start">
               <Icon name="lucide:map-pin" size="20" class="text-blue-400 mr-3 mt-1" />
