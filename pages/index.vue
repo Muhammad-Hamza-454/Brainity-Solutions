@@ -61,22 +61,6 @@
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          <!-- Web Development -->
-          <div class="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow">
-            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
-              <Icon name="lucide:globe" class="w-6 h-6 text-primary-600" />
-            </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-4">Web Development</h3>
-            <p class="text-gray-600 mb-4">
-              Custom websites and web applications built with modern frameworks like React, Vue.js, and Next.js.
-            </p>
-            <ul class="text-sm text-gray-500 space-y-1">
-              <li>• Responsive Design</li>
-              <li>• SEO Optimized</li>
-              <li>• Fast Performance</li>
-            </ul>
-          </div>
-
           <!-- Mobile Apps -->
           <div class="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow">
             <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
@@ -90,6 +74,22 @@
               <li>• Cross-Platform</li>
               <li>• Native Performance</li>
               <li>• App Store Ready</li>
+            </ul>
+          </div>
+
+          <!-- Web Development -->
+          <div class="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow">
+            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+              <Icon name="lucide:globe" class="w-6 h-6 text-primary-600" />
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Web Development</h3>
+            <p class="text-gray-600 mb-4">
+              Custom websites and web applications built with modern frameworks like React, Vue.js, and Next.js.
+            </p>
+            <ul class="text-sm text-gray-500 space-y-1">
+              <li>• Responsive Design</li>
+              <li>• SEO Optimized</li>
+              <li>• Fast Performance</li>
             </ul>
           </div>
 
