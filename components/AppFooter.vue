@@ -76,8 +76,8 @@
       <div class="border-t border-gray-800 pt-8 text-center animate-fadeInUp animate-delay-500">
         <p class="text-gray-400">
           &copy; {{ new Date().getFullYear() }} Brainity Solutions. All rights reserved. | 
-          <a href="#" class="text-blue-400 hover:text-white transition-colors duration-300">Privacy Policy</a> | 
-          <a href="#" class="text-blue-400 hover:text-white transition-colors duration-300">Terms of Service</a>
+          <NuxtLink to="/privacy-policy" class="text-blue-400 hover:text-white transition-colors duration-300">Privacy Policy</NuxtLink> | 
+          <NuxtLink to="/terms-of-service" class="text-blue-400 hover:text-white transition-colors duration-300">Terms of Service</NuxtLink>
         </p>
       </div>
     </div>
