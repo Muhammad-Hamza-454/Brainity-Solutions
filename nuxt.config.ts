@@ -11,6 +11,12 @@ export default defineNuxtConfig({
     '~/assets/css/animations.css',
     '~/assets/css/enhanced.css'
   ],
+  nitro: {
+    prerender: {
+      routes: ['/sitemap.xml'],
+      ignore: ['/projects']
+    }
+  },
   app: {
     head: {
       title: 'Brainity Solutions - Transforming Ideas into Digital Excellence',
